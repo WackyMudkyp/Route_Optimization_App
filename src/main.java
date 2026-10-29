@@ -95,6 +95,19 @@ public class main {
                 for (int i = 0 ; i < IcRonda ; i++){
                     iniciaRonda(hormigas, Mapa);
                 }
+
+                delivery_car auxiliar = hormigas[0];
+                for (delivery_car i : hormigas ){
+                    if (i.getMejorDist() < auxiliar.getMejorDist()){
+                        auxiliar = i;
+                    }
+                }
+                String dist = " " +auxiliar.getMejorDist(); 
+                String rutaVis = "Rutas Utilizadas: ";
+                for (ruta k : auxiliar.getMejorRuta()){
+                rutaVis += k.getNombre()  + " --> ";
+                }
+                v1.actualizarResultados(dist, rutaVis);
                 
 
             }  

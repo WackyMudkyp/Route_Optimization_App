@@ -237,5 +237,35 @@ public class delivery_car {
         
         return sum;
     }
+
+
+    public map getMapa() {
+        return Mapa;
+    }
+
+
+    public lugar getLugarActual() {
+        return LugarActual;
+    }
+
+
+    public ruta[] getRutasRecorridas() {
+        return rutasRecorridas;
+    }
+
+
+    public lugar[] getObjetivos() {
+        return Objetivos;
+    }
+
+
+    public ruta[] getMejorRuta() {
+        return mejorRuta;
+    }
+    
+
+    public float getMejorDist() {
+        return mejorDist;
+    }
     
 }
